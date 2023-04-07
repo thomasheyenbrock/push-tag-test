@@ -1,0 +1,13 @@
+name: push-tag-test
+
+on:
+  push:
+    tags:
+      - "push-tag-test@*"
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Hello
+        run: echo world
